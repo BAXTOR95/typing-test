@@ -90,7 +90,7 @@ class TypingTest:
         typed_text = self.input_field_widget.get()
         original_text = self.display_text_widget.get('1.0', tk.END).strip()
 
-        calculated_speed = self.calculate_speed(typed_text, original_text)
+        calculated_speed = self.calculate_speed(typed_text)
         calculated_accuracy = self.calculate_accuracy(typed_text, original_text)
 
         name = None
