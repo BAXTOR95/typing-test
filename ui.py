@@ -76,7 +76,7 @@ class TypingTestUI(tk.Frame):
 
     def setup_buttons(self):
         """Creates the Start, New Text, and Translate buttons."""
-        self.start_button = tk.Button(self, text='Start', command=self.start_test)
+        self.start_button = tk.Button(self, text='Start', command=self.set_start_test_callback)
         self.new_text_button = tk.Button(
             self, text="New Text", command=self.fetch_new_text_thread
         )
@@ -202,3 +202,4 @@ class TypingTestUI(tk.Frame):
         This method will be called after the text_manager is set.
         """
         self.fetch_new_text_thread()
+        
